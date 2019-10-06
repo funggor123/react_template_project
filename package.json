@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "antd": "^3.23.6",
     "babel-preset-env": "^1.7.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
