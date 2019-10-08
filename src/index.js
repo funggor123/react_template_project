@@ -4,9 +4,21 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// !!!!!!!
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+// Uncomment this to run the program in Local Machine // 
+//ReactDOM.render(<App />, document.getElementById('root'));
+
+// Uncomment this to build the App to Chain Market //
+// App ID = a1234567
+window.a1234567 = {
+    mount: () => {
+        const el = document.getElementById('a1234567');
+        ReactDOM.render(<App />, el);
+    },
+    unmount: () => {
+        const el = document.getElementById('a1234567');
+        ReactDOM.unmountComponentAtNode(el);
+    }
+}
 serviceWorker.unregister();
