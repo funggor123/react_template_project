@@ -4,7 +4,7 @@ import './index.css';
 import { Layout } from 'antd';
 import ListView from "./components/listview"
 import HeadBar from "./components/headbar"
-import Player from "./components/player"
+
 
 const { Header, Footer, Content } = Layout;
 
@@ -17,7 +17,7 @@ class App extends React.Component {
           <HeadBar/>
         </Header>
         <Content style={{ margin: '16px 0' , padding: '0 50px' }}>
-          <Player />
+          
           <ListView/>
         </Content>
         <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>

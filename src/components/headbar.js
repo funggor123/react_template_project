@@ -2,7 +2,7 @@ import React from 'react';
 import 'antd/dist/antd.css';
 import { Icon, Button, Typography, Row, Col } from 'antd';
 import SearchBar from "./searchbar"
-import DownloadVideoButton from "./download_video_button"
+import Multi_upload_Button from "./upload_multi_button"
 
 const { Text } = Typography;
 
@@ -13,7 +13,7 @@ class HeadBar extends React.Component {
             <Row>
                 <Col span={6}> 
                     <Text strong style={{ fontSize: 20}}>
-                         链视频
+                         ChainCompute
                     </Text>
                 </Col>
                 <Col span={12}>     
@@ -22,7 +22,8 @@ class HeadBar extends React.Component {
                 <Col span={5}>
                 </Col>
                 <Col span={1} >
-                    <DownloadVideoButton />
+                    <Multi_upload_Button/>
+                    
                 </Col>
           </Row>
         )
